@@ -361,7 +361,7 @@ class StoryMenuState extends MusicBeatState
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
 				#if !SHOW_LOADING_SCREEN FlxG.sound.music.stop(); #end
-				MusicBeatState.SwitchState(new characterSelectState(), true);
+				LoadingState.loadAndSwitchState(new characterSelectState(weekName), true);
 				FreeplayState.destroyFreeplayVocals();
 			});
 			
