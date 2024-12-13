@@ -28,6 +28,7 @@ import states.editors.CharacterEditorState;
 
 import substates.PauseSubState;
 import substates.GameOverSubstate;
+import substates.resultsSubstate;
 
 #if !flash
 import flixel.addons.display.FlxRuntimeShader;
@@ -883,7 +884,6 @@ class PlayState extends MusicBeatState
 		else
 			startCountdown();
 	}
-
 	var dialogueCount:Int = 0;
 	public var psychDialogue:DialogueBoxPsych;
 	//You don't have to add a song, just saying. You can just do "startDialogue(DialogueBoxPsych.parseDialogue(Paths.json(songName + '/dialogue')))" and it should load dialogue.json
